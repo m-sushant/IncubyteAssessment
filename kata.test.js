@@ -11,4 +11,7 @@ describe('String Calculator TDD Kata', () =>{
   test('It should return the sum of numbers separated by commas or new line', () => {
     expect(add('1\n2,3')).toBe(6);
   })
+  test('It should return the sum of numbers separated by delimiters', () => {
+    expect(add("//;\n1;2")).toBe(3);
+  })
 })

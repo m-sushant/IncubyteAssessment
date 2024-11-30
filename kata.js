@@ -1,4 +1,5 @@
 const add = (numbers) => {
-  console.log(numbers);
-  return;
+  if(numbers === '') {
+    return 0;
+  }
 }

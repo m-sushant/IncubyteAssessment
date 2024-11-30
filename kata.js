@@ -1,9 +1,8 @@
 const add = (numbers) => {
-  if(numbers === '') {
+  if (numbers === '') {
     return 0;
-  } else {
-    return parseInt(numbers, 10);
   }
+  return numbers.split(',').reduce((sum, number) => sum + parseInt(number, 10), 0);
 }
 
 module.exports = { add };

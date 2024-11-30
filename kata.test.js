@@ -1,8 +1,8 @@
-const addNumbers = require('./kata.js');
+const {add} = require('./kata.js');
 
 describe('String Calculator TDD Kata', () =>{
 
   test('It should return 0 if empty string is passed', () =>{
-    expect(addNumbers('')).toBe(0);
+    expect(add('')).toBe(0);
   });
 })

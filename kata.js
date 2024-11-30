@@ -13,7 +13,7 @@ const add = (numbers) => {
   if (negativeNumbers.length > 0) {
     throw new Error(`negative numbers not allowed ${negativeNumbers.join(',')}`);
   }
-  return numbers.split(numSplitter).reduce((sum, number) => sum + parseInt(number, 10), 0);
+   return convertedStringToNum.reduce((sum, number) => sum + (number <= 1000 ? number : 0), 0);
 }
 
 module.exports = { add };

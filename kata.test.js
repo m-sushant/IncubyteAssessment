@@ -17,4 +17,7 @@ describe('String Calculator TDD Kata', () =>{
   test('It should return with error if negative numbers are passed in the string', () => {
     expect(() => add("1,-2,3")).toThrow("negative numbers not allowed -2");
   })
+  test('It should ignore the numbers greater than 1000', () => {
+    expect(add("1001,2")).toBe(2);
+  })
 })
